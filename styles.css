@@ -1,7 +1,33 @@
-* main {
-  color: chartreuse;
+* {
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+main {
+  color: white;
   font-size: 200px;
   text-align: center;
   border: 5px;
   border-color: black;
+  background-color: aqua;
+}
+
+#tags {
+  display: flex;
+  flex-direction: row;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  align-items: flex-end;
+}
+
+.question {
+  border: 1px;
+  border-width: 10px;
 }
