@@ -117,3 +117,15 @@ button:active {
   background-color: hotpink;
   color: white;
 }
+
+.about_me {
+  display: flex;
+  justify-content: center;
+  color: blanchedalmond;
+}
+
+.picture_name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
