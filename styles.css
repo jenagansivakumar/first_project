@@ -28,6 +28,9 @@ main {
 }
 
 .question {
-  border: 1px;
-  border-width: 10px;
+  border: 1px solid;
+  border-color: black;
+  border-width: 2px;
+  width: 500px;
+  height: px;
 }
