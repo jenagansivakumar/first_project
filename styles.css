@@ -32,16 +32,16 @@ main {
   position: fixed;
   bottom: 0px;
   padding: 5px;
+  background-color: rgb(170, 255, 227);
 }
 
 .question__card {
   position: relative;
   display: flex;
   flex-direction: column;
-  display: flex;
-  border: 50px solid;
+  border: 1px solid;
   border-color: black;
-  border-width: 10px;
+  border-width: 5px;
   width: 700px;
 }
 
