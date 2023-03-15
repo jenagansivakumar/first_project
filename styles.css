@@ -60,6 +60,12 @@ body {
   background-color: cornflowerblue;
   height: 300px;
 }
+.question__card:hover {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 100px;
+  background-color: hotpink;
+  color: white;
+}
 
 h1 {
   color: blueviolet;
@@ -111,13 +117,6 @@ button:active {
   right: 0;
 }
 
-.question__card:hover {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 100px;
-  background-color: hotpink;
-  color: white;
-}
-
 .about_me {
   display: flex;
   justify-content: center;
@@ -128,4 +127,10 @@ button:active {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#add_and_decrease {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
