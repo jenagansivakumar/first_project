@@ -15,12 +15,16 @@ body {
 }
 .tag_container {
   display: flex;
-  color: white;
+  color: cornflowerblue;
   flex-direction: row;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   justify-content: space-around;
-  align-items: flex-start;
+  align-self: flex-start;
   font-size: small;
+  justify-content: baseline;
+  margin-top: 70px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .navbar {
@@ -111,4 +115,5 @@ button:active {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 100px;
   background-color: hotpink;
+  color: white;
 }
