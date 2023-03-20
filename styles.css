@@ -75,7 +75,7 @@ button {
   height: auto;
   transition: 1s;
   background-color: rgb(255, 255, 168);
-  color: rgb(255, 255, 168);
+  color: black;
 }
 button:hover {
 }

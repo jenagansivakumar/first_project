@@ -74,17 +74,17 @@ button {
   width: 2;
   height: auto;
   transition: 1s;
-  background-color: rgb(255, 255, 168);
-  color: rgb(255, 255, 168);
+  background-color: white(255, 255, 168);
+  color: black;
 }
 button:hover {
 }
-button:active {
+/* button:active {
   color: black;
   background-color: rgb(255, 105, 30);
   font-family: "Courier New", Courier, monospace;
   transition: 0.5s;
-}
+} */
 .question_container {
   display: flex;
   justify-content: center;
