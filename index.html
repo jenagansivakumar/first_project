@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"> </script>
   </head>
   <body>
     <header>
@@ -17,10 +18,21 @@
       <div class="question_container">
       <section class="question__card">
         <h2 class="question1">
-          <img id="question_bookmark" src="assets/bookmark_filled.png" width="40" 
-          height="70" alt="">
           What Property Flips The Axes In Flexbox?
         </h2>
+
+        <button id="question_bookmark" onclick="toggleImage()">
+          <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
+          height="70" alt="Image 1">
+        </button>
+
+
+
+
+
+</head>
+
+
 
         <button onclick='alert("Answer!")'>Flex-direction</button>
         <p hidden>Flex-direction</p>
@@ -35,8 +47,10 @@
       <div class="question_container">
       <section class="question__card">
         <h2 class="question__card__question2">
-          <img id="question_bookmark" src="assets/bookmark_filled.png" width="40" 
-          height="70" alt="">
+          <button id="question_bookmark" onclick="toggleImage()">
+            <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
+            height="70" alt="Image 1">
+          </button>
           What Is My Favourite Colour?
         </h2>
 
@@ -50,8 +64,10 @@
       <div class="question_container">
       <section class="question__card">
         <h2 class="question__card__question3">
-          <img id="question_bookmark" src="assets/bookmark_transparent.png" width="40" 
-          height="70" alt="">
+          <button id="question_bookmark" onclick="toggleImage()">
+            <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
+            height="70" alt="Image 1">
+          </button>
           Is It Going To Be Sunny All Day?
         </h2>
 
@@ -64,24 +80,7 @@
         </div>
       </div>
       <div class="question_container">
-      <section class="question__card">
-        <h2 class="question__card__question4">
-          <img id="question_bookmark" src="assets/bookmark_transparent.png" width="40" 
-          height="70" alt="">
-          Did I Use More Than One CSS File?
-        </h2>
-
-        <button> Nope.</button>
-<p hidden>Answer</p>
-        <div class="tag_container">
-          <p id="tags">#organisation</p>
-          <p id="tags">#css</p>
-          <p id="tags">#coding</p>
-        </div>
-      </div>
-      </section>
-        </div>
-      </section>
+    
     </main>
 
     <footer class="navbar">

@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
       <h1>QUIZ APP</h1>
+      <main>
       <h2 class="page_title">Profile</h2> <br>
            <section class="picture_name">
       <h2 class="profile_name">Nicolas Cage</h2>
@@ -24,14 +26,31 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatum ullam delectus exercitationem ut voluptas commodi nihil. Alias, animi voluptates maiores dolores ea reiciendis iure natus excepturi consequatur! Consequatur, fugit!</p>
         </section>
       <section>
-        <img src="assets/question.png" width="50" alt="questionbutton">
+        <img src="assets/question.png" id="bookmark_toggle" width="50" alt="questionbutton">
       </section>
+      <section class="settings">
+        <h2 class="settings__title">Settings</h2>
+        <div class="settings__dark-mode-wrapper">
+          <label for="dark-mode" class="settings__dark-mode-label"
+            >Dark Mode</label
+          >
+          <div class="switch-container">
+            <input id="dark-mode" type="checkbox" />
+            <div class="switch"></div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </section>
+    </main>
         <footer class="navbar">
-            <a href="index.html" class="footer_link footer__link--active">
-              <img src="assets/home.png" width="50" alt=""></a
-            >
-            <a href="bookmarks.html" class="footer_link"> <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
-            <a href="profile.html" class="footer_link"> <img src="assets/profile_filled.png" width="50" alt=""> </a>
+            <a href="index.html" aria-label='click here to go to the home page' class="navbar_link navbar__link--active">
+              
+              <img src="assets/home.png" width="50" alt=""></a>
+
+            <a href="bookmarks.html" aria-label="click here to go to the bookmarks page" class="footer_link"> 
+              <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
+            <a href="profile.html" aria-label="click here to go to the profile page" class="footer_link"> <img src="assets/profile_filled.png" width="50" alt=""> </a>
           </footer>
         </body>
       </html>
