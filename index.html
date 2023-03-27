@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"> </script>
+<script src="index.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,20 +21,12 @@
           What Property Flips The Axes In Flexbox?
         </h2>
 
-        <button id="question_bookmark" onclick="toggleImage()">
-          <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
-          height="70" alt="Image 1">
+        <button id="question_bookmark" >
+          <img data-js="bookmark-icon" id="bookmarked" src="./assets/bookmark_transparent.png" width="40" 
+          height="70" alt="bookmark" >
         </button>
 
-
-
-
-
-</head>
-
-
-
-        <button onclick='alert("Answer!")'>Flex-direction</button>
+        <button>Flex-direction</button>
         <p hidden>Flex-direction</p>
 
         <div class="tag_container">
@@ -47,8 +39,8 @@
       <div class="question_container">
       <section class="question__card">
         <h2 class="question__card__question2">
-          <button id="question_bookmark" onclick="toggleImage()">
-            <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
+          <button id="question_bookmark" >
+            <img data-js="bookmark-icon" id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
             height="70" alt="Image 1">
           </button>
           What Is My Favourite Colour?
@@ -65,7 +57,7 @@
       <section class="question__card">
         <h2 class="question__card__question3">
           <button id="question_bookmark" onclick="toggleImage()">
-            <img id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
+            <img data-js="bookmark-icon" id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
             height="70" alt="Image 1">
           </button>
           Is It Going To Be Sunny All Day?
@@ -83,12 +75,14 @@
     
     </main>
 
-    <footer class="navbar">
-      <a href="index.html" class="footer_link footer__link--active">
-        <img src="assets/home_filled.png" width="50" alt=""></a
-      >
-      <a href="bookmarks.html" class="footer_link"> <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
-      <a href="profile.html" class="footer_link"> <img src="assets/profile.png" width="50" alt=""> </a>
-    </footer>
+     <footer class="navbar">
+            <a href="index.html" aria-label='click here to go to the home page' class="navbar_link navbar__link--active">
+              
+              <img src="assets/home.png" width="50" alt=""></a>
+
+            <a href="bookmarks.html" aria-label="click here to go to the bookmarks page" class="footer_link"> 
+              <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
+            <a href="profile.html" aria-label="click here to go to the profile page" class="footer_link"> <img src="assets/profile_filled.png" width="50" alt=""> </a>
+          </footer>
   </body>
 </html>
