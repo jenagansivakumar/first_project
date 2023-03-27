@@ -8,6 +8,7 @@ main {
   text-align: center;
   border: 5px;
   border-color: black;
+  margin-bottom: 100px;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   margin-top: 0px;
   flex-wrap: wrap;
   gap: 15px;
+  margin-bottom: 30px;
 }
 
 .question__card {
@@ -56,6 +58,38 @@ h1 {
   top: 5px;
   transition: 6s;
 }
+
+.text_area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-color: black;
+  border-width: 5px;
+  width: 500px;
+  height: 200px;
+  bottom: 50px;
+  margin-top: 150px;
+  transition: 5s;
+  background-color: rgb(81, 49, 81);
+  background: none;
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  background-color: hotpink;
+  border-width: 5px;
+  border-color: yellowgreen;
+}
+
+.new-card-container {
+  margin-top: 60px;
+}
+
 h1:hover {
   color: rgb(231, 205, 255);
   font-size: 110px;

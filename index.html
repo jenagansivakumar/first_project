@@ -6,82 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css" />
-<script src="index.js" defer></script>
+    <script src="index.js" defer></script>
   </head>
+
   <body>
     <header>
       <h1>QUIZ APP</h1>
-      <h2 class="page_title">Home Page</h2> <br>
+      <h2 class="page_title">Home Page</h2>
+      <br />
     </header>
+
     <main>
-      
       <div class="question_container">
-      <section class="question__card">
-        <h2 class="question1">
-          
-          What Property Flips The Axes In Flexbox?
-        </h2>
+        <section class="question__card">
+          <h2 class="question1">What Property Flips The Axes In Flexbox?</h2>
 
-        <button id="question_bookmark" >
-          <img data-js="bookmark-icon" id="bookmarked" src="./assets/bookmark_transparent.png" width="40" 
-          height="70" alt="bookmark" >
-        </button>
-
-        <button data-js="show-answer" id="question_button">Show Answer</button>
-        <p class="hidden_answer" hidden>Flex-direction</p>
-
-        <div class="tag_container">
-          
-          <p id="tags">#html</p>
-          <p id="tags">#css</p>
-          <p id="tags">#flexbox</p> </ul>
-        </div>
-      </div>
-      <div class="question_container">
-      <section class="question__card">
-        <h2 class="question__card__question2">
-          <button id="question_bookmark" >
-            <img data-js="bookmark-icon" id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
-            height="70" alt="Image 1">
+          <button id="question_bookmark">
+            <img
+              data-js="bookmark-icon"
+              id="bookmarked"
+              src="./assets/bookmark_transparent.png"
+              width="40"
+              height="70"
+              alt="bookmark"
+            />
           </button>
-          What Is My Favourite Colour?
-        </h2>
 
-        <button data-js="show-answer" >Show Answer</button>
-        <p class="hidden_answer" hidden>Answer</p>
-        <div class="tag_container">
-          <p id="tags">#colours</p>
-          <p id="tags">#favourite</p>
-        </div>
-      </div>
-      <div class="question_container">
-      <section class="question__card">
-        <h2 class="question__card__question3">
-          <button id="question_bookmark" onclick="toggleImage()">
-            <img data-js="bookmark-icon" id="bookmark_toggle" src="assets/bookmark_filled.png" width="40" 
-            height="70" alt="Image 1">
+          <button data-js="show-answer" id="question_button">
+            Show Answer
           </button>
-          Is It Going To Be Sunny All Day?
-        </h2>
+          <p class="hidden_answer" hidden>Flex-direction</p>
 
-        <button data-js="show-answer" > Show Me </button>
-<p class="hidden_answer" hidden>Answer</p>
-<div class="tag_container">
-  <p id="tags">#colours</p>
-  <p id="tags">#favourite</p>
-        </div>
+          <div class="tag_container">
+            <p id="tags">#html</p>
+            <p id="tags">#css</p>
+            <p id="tags">#flexbox</p>
+          </div>
+        </section>
       </div>
-    
+
+      <div class="question_container">
+        <section class="question__card">
+          <h2 class="question__card__question2">
+            <button id="question_bookmark">
+              <img
+                data-js="bookmark-icon"
+                id="bookmark_toggle"
+                src="assets/bookmark_filled.png"
+                width="40"
+                height="70"
+                alt="Image 1"
+              />
+            </button>
+            What Is My Favourite Colour?
+          </h2>
+
+          <button data-js="show-answer">Show Answer</button>
+          <p class="hidden_answer" hidden>Answer</p>
+          <div class="tag_container">
+            <p id="tags">#colours</p>
+            <p id="tags">#favourite</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="question_container">
+        <section class="question__card">
+          <h2 class="question__card__question3">
+            <button id="question_bookmark" onclick="toggleImage()">
+              <img
+                data-js="bookmark-icon"
+                id="bookmark_toggle"
+                src="assets/bookmark_filled.png"
+                width="40"
+                height="70"
+                alt="Image 1"
+              />
+            </button>
+            Is It Going To Be Sunny All Day?
+          </h2>
+
+          <button data-js="show-answer">Show Me</button>
+          <p class="hidden_answer" hidden>Answer</p>
+          <div class="tag_container">
+            <p id="tags">#colours</p>
+            <p id="tags">#favourite</p>
+          </div>
+        </section>
+      </div>
     </main>
 
-     <footer class="navbar">
-            <a href="index.html" aria-label='click here to go to the home page' class="navbar_link navbar__link--active">
-              
-              <img src="assets/home.png" width="50" alt=""></a>
+    <footer class="navbar">
+      <a
+        href="index.html"
+        aria-label="click here to go to the home page"
+        class="navbar_link navbar__link--active"
+      >
+        <img src="assets/home.png" width="50" alt=""
+      /></a>
 
-            <a href="bookmarks.html" aria-label="click here to go to the bookmarks page" class="footer_link"> 
-              <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
-            <a href="profile.html" aria-label="click here to go to the profile page" class="footer_link"> <img src="assets/profile_filled.png" width="50" alt=""> </a>
-          </footer>
+      <a
+        href="bookmarks.html"
+        aria-label="click here to go to the bookmarks page"
+        class="footer_link"
+      >
+        <img src="assets/bookmark_transparent.png" width="50" alt=""
+      /></a>
+      <a
+        href="profile.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/profile_filled.png" width="50" alt="" />
+      </a>
+      <a
+        href="form.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/form.png" width="50" alt="" />
+      </a>
+    </footer>
   </body>
 </html>
