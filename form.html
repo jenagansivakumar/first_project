@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/CSS /styles.css" />
+    <script src="/JavaScript/form.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <h2 class="page_title">Create your own questions!</h2>
+      <form data-js="form">
+        <label for="question">Your Question</label>
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="10"
+          data-js="question-input"
+          placeholder="Enter your question here"
+          maxlength="150"
+        ></textarea>
+        <label for="answer">Your Answer</label>
+        <textarea
+          data-js="answer-input"
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          data-js="answer-input"
+          placeholder="Enter your answer here"
+          maxlength="150"
+        ></textarea>
+        <div><span id="counter">0</span> / 150 characters</div>
+        <label for="labels">#tags</label>
+        <textarea
+          name="labels"
+          id="labels"
+          cols="30"
+          rows="3"
+          placeholder="#enter tags"
+          maxlength="150"
+          data-js="tags-input"
+        ></textarea>
+        <button type="submit" class="submit-center" data-js="submit-button">
+          Submit
+        </button>
+      </form>
+      <section
+        class="new-card-container"
+        data-js="new-card-container"
+      ></section>
+    </main>
+
+    <footer class="navbar">
+      <a
+        href="index.html"
+        aria-label="click here to go to the home page"
+        class="navbar_link navbar__link--active"
+      >
+        <img src="assets/home.png" width="50" alt=""
+      /></a>
+
+      <a
+        href="bookmarks.html"
+        aria-label="click here to go to the bookmarks page"
+        class="footer_link"
+      >
+        <img src="assets/bookmark_transparent.png" width="50" alt=""
+      /></a>
+      <a
+        href="profile.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/profile_filled.png" width="50" alt="" />
+      </a>
+      <a
+        href="form.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/form.png" width="50" alt="" />
+      </a>
+    </footer>
+  </body>
+</html>

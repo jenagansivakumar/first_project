@@ -11,11 +11,11 @@ main {
 }
 
 body {
-  background-color: rgba(146, 60, 161, 0.747);
+  background-color: rgba(215, 50, 244, 0.747);
 }
 .tag_container {
   display: flex;
-  color: cornflowerblue;
+  color: rgb(255, 191, 252);
   flex-direction: row;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   justify-content: space-around;
@@ -25,25 +25,6 @@ body {
   margin-top: 70px;
   flex-wrap: wrap;
   gap: 15px;
-}
-
-.navbar {
-  margin-top: 10px;
-  height: 55px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: larger;
-  position: fixed;
-  bottom: 0px;
-  padding: 5px;
-  opacity: 0.2;
-  transition: 3s;
-}
-.navbar:hover {
-  opacity: 0.8;
-  background-color: rgb(240, 223, 255);
 }
 
 .question__card {
@@ -57,7 +38,7 @@ body {
   bottom: 50px;
   margin: 15px;
   transition: 5s;
-  background-color: cornflowerblue;
+  background-color: rgb(255, 191, 252);
   height: 300px;
 }
 .question__card:hover {
@@ -68,9 +49,9 @@ body {
 }
 
 h1 {
-  color: blueviolet;
+  color: rgb(147, 32, 255);
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans";
   font-size: 100px;
   top: 5px;
   transition: 6s;
@@ -79,9 +60,9 @@ h1:hover {
   color: rgb(231, 205, 255);
   font-size: 110px;
   border: 1px solid;
-  border-color: black;
   border-width: 5px;
   width: auto;
+  background-color: rgb(150, 72, 255);
 }
 
 button {
@@ -92,35 +73,28 @@ button {
   border-width: 2px;
   width: 2;
   height: auto;
-  transition: 5s;
+  transition: 1s;
   background-color: rgb(255, 255, 168);
+  color: rgb(255, 255, 168);
 }
 button:hover {
-  cursor: pointer;
-  background-color: darkorange;
 }
-
+button:active {
+  color: black;
+  background-color: rgb(255, 105, 30);
+  font-family: "Courier New", Courier, monospace;
+  transition: 0.5s;
+}
 .question_container {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 
-button:active {
-  background-color: purple;
-  transition: 2s;
-}
-
 #question_bookmark {
   position: absolute;
   top: -15px;
   right: 0;
-}
-
-.about_me {
-  display: flex;
-  justify-content: center;
-  color: blanchedalmond;
 }
 
 .picture_name {
@@ -150,4 +124,35 @@ button:active {
   border-color: black;
   border-width: 5px;
   width: auto;
+}
+
+.navbar {
+  margin-top: 10px;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  position: fixed;
+  bottom: 0px;
+  padding: 5px;
+  opacity: 0.2;
+  transition: 3s;
+}
+.navbar:hover {
+  opacity: 0.8;
+  background-color: rgb(240, 223, 255);
+}
+
+.profile_name {
+  font-size: 100px;
+  color: rgba(98, 33, 66, 0.766);
+}
+
+.about_me {
+  display: flex;
+  justify-content: center;
+  color: blanchedalmond;
+  font-size: 70px;
 }

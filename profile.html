@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
     <header>
       <h1>QUIZ APP</h1>
-      <h2 class="page_title">Profile</h2> <br>
-        <section class="picture_name">
-            <h2>Nicolas Cage</h2>
-            <img src="images/Nic Cage.jpeg" width=" 300" alt="">
-        </section>
+    </header>
 
-        <section>
-            <h2 class="about_me"> About Me </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, voluptatum ullam delectus exercitationem ut voluptas commodi nihil. Alias, animi voluptates maiores dolores ea reiciendis iure natus excepturi consequatur! Consequatur, fugit!</p>
-        </section>
-<section id="add_and_decrease">
-        <label id="countLabel"> 0</label> <br><br><br><br><br><br>
-       <button id="decreaseButton">Decrease</button>
-       <button id="resetButton">Reset</button>
-       <button id="increaseButton">Increase</button>
+    <main>
+      <h2 class="page_title">Profile</h2>
+      <br />
+      <section class="picture_name">
+        <h2 class="profile_name">Nicolas Cage</h2>
+        <img src="images/download (1).jpeg" width=" 300" alt="" />
       </section>
-        <footer class="navbar">
-            <a href="index.html" class="footer_link footer__link--active">
-              <img src="assets/home.png" width="50" alt=""></a
-            >
-            <a href="bookmarks.html" class="footer_link"> <img src="assets/bookmark_transparent.png" width="50" alt=""></a>
-            <a href="profile.html" class="footer_link"> <img src="assets/profile_filled.png" width="50" alt=""> </a>
-          </footer>
-        </body>
-      </html>
-</body>
 
+      <section>
+        <h2 class="about_me">About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          voluptatum ullam delectus exercitationem ut voluptas commodi nihil.
+          Alias, animi voluptates maiores dolores ea reiciendis iure natus
+          excepturi consequatur! Consequatur, fugit!
+        </p>
+      </section>
+      <section>
+        <img
+          src="assets/question.png"
+          id="bookmark_toggle"
+          width="50"
+          alt="questionbutton"
+        />
+      </section>
+      <section class="settings">
+        <h2 class="settings__title">Settings</h2>
+        <div class="settings__dark-mode-wrapper">
+          <label for="dark-mode" class="settings__dark-mode-label"
+            >Dark Mode</label
+          >
+          <div class="switch-container">
+            <input id="dark-mode" type="checkbox" />
+            <div class="switch"></div>
+          </div>
+          <br />
+          <br />
+        </div>
+      </section>
+    </main>
+    <footer class="navbar">
+      <a
+        href="index.html"
+        aria-label="click here to go to the home page"
+        class="navbar_link navbar__link--active"
+      >
+        <img src="assets/home.png" width="50" alt=""
+      /></a>
+
+      <a
+        href="bookmarks.html"
+        aria-label="click here to go to the bookmarks page"
+        class="footer_link"
+      >
+        <img src="assets/bookmark_transparent.png" width="50" alt=""
+      /></a>
+      <a
+        href="profile.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/profile_filled.png" width="50" alt="" />
+      </a>
+      <a
+        href="form.html"
+        aria-label="click here to go to the profile page"
+        class="footer_link"
+      >
+        <img src="assets/form.png" width="50" alt="" />
+      </a>
+    </footer>
+  </body>
 </html>
