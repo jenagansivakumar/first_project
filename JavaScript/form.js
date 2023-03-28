@@ -1,7 +1,9 @@
 const form = document.querySelector('[data-js="form"]');
 const questionInput = document.querySelector('[data-js="question-input"]');
 const answerInput = document.querySelector('[data-js="answer-input"]');
+const tagInput = document.querySelector('[data-js="tags-input"]');
 
+console.log(tagInput);
 const newCardContainer = document.querySelector(
   '[data-js="new-card-container"]'
 );
@@ -10,7 +12,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const questionFromForm = questionInput.value;
-  const tagFromForm = "#hello";
+  const tagFromForm = tagInput.value;
   const answerFromForm = answerInput.value;
 
   const cardHtml = `<div class="question_container">
@@ -29,8 +31,8 @@ form.addEventListener("submit", (e) => {
     ${questionFromForm}
   </h2>
 
-  <button data-js="show-answer">Show Answer</button>
-  <p class="hidden_answer" hidden>${answerFromForm}</p>
+  <button data-js="show-answer">${answerFromForm}</button>
+  <p class="hidden_answer" ${answerFromForm}></p>
   <div class="tag_container">
     <p id="tags">${tagFromForm}</p>
 
@@ -39,4 +41,11 @@ form.addEventListener("submit", (e) => {
 </div>`;
 
   newCardContainer.innerHTML = cardHtml;
+});
+
+const textInput = document.querySelector('[data-js="text-input"]');
+const counter = document.getElementById("counter");
+
+answerInput.addEventListener("input", () => {
+  counter.innerText = answerInput.value.length;
 });

@@ -26,6 +26,7 @@ for (let i = 0; i < answers.length; i++) {
   answer.addEventListener("click", (e) => {
     console.log(hiddenAnswer);
     hiddenAnswer[i].toggleAttribute("hidden");
+
     //   button.textContent = ;
     if (hiddenAnswer[i].hasAttribute("hidden")) {
       //   answer.textContent = "Show answer";
